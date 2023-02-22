@@ -27,7 +27,7 @@ db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>%
   coord_flip() + 
   labs( title = 'Sarcoma by histotype',
         subtitle = 'Total cases of sarcomas in France from 2013 to 2016',
-        caption = 'Data from Pinieux et al. PLOS ONE 2021', 
+        caption = 'Data from de Pinieux et al. PLOS ONE 2021', 
         x = 'Histotype', 
         y = 'Number of cases', 
         fill = 'Site') + 
@@ -48,7 +48,7 @@ db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>%
   coord_flip() + 
   labs( title = 'Sarcoma by differentiation',
         subtitle = 'Total cases of sarcomas in France from 2013 to 2016',
-        caption = 'Data from Pinieux et al. PLOS ONE 2021', 
+        caption = 'Data from de Pinieux et al. PLOS ONE 2021', 
         x = 'Differentiation', 
         y = 'Number of cases', 
         fill = 'Site') + 
