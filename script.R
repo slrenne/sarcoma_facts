@@ -33,8 +33,8 @@ db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>%
         fill = 'Site') + 
   theme(legend.position = "bottom")
 
-ggsave('output/pinieuxTotHisto.pdf', 
-       width = 20,
+ggsave('output/pinieuxTotHisto.png', 
+       width = 8,
        height = 13)
 
 db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>%
@@ -54,8 +54,8 @@ db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>%
         fill = 'Site') + 
   theme(legend.position = "bottom")
 
-ggsave('output/pinieuxTotDiff.pdf', 
-       width = 20,
-       height = 13)
+ggsave('output/pinieuxTotDiff.png', 
+       width = 8,
+       height = 5)
 
   
