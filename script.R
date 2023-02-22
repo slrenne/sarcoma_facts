@@ -25,12 +25,37 @@ db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>%
     fill = site)) +
   geom_col() +
   coord_flip() + 
-  labs( title = 'Sarcoma in France',
-        subtitle = 'Total number of sarcomas from 2013 to 2016',
+  labs( title = 'Sarcoma by histotype',
+        subtitle = 'Total cases of sarcomas in France from 2013 to 2016',
         caption = 'Data from Pinieux et al. PLOS ONE 2021', 
         x = 'Histotype', 
         y = 'Number of cases', 
-        fill = 'Site') +  theme(legend.position = "bottom")
+        fill = 'Site') + 
+  theme(legend.position = "bottom")
 
+ggsave('output/pinieuxTotHisto.pdf', 
+       width = 20,
+       height = 13)
+
+db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>%
+  group_by(Differentiation, site) %>%
+  summarise(tot = sum(tot)) %>%
+  ggplot(mapping = aes(
+    x = reorder(Differentiation, tot),
+    y = tot, 
+    fill = site)) +
+  geom_col() +
+  coord_flip() + 
+  labs( title = 'Sarcoma by differentiation',
+        subtitle = 'Total cases of sarcomas in France from 2013 to 2016',
+        caption = 'Data from Pinieux et al. PLOS ONE 2021', 
+        x = 'Differentiation', 
+        y = 'Number of cases', 
+        fill = 'Site') + 
+  theme(legend.position = "bottom")
+
+ggsave('output/pinieuxTotDiff.pdf', 
+       width = 20,
+       height = 13)
 
   
