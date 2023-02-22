@@ -18,3 +18,19 @@ pop <- read_delim("input/frenchPop1316.csv",
                   trim_ws = TRUE)
 
 
+db %>% mutate(tot = `2013`+`2014`+`2015`+`2016`) %>% 
+  ggplot(mapping = aes(
+    x = reorder(histotype, tot),
+    y = tot, 
+    fill = site)) +
+  geom_col() +
+  coord_flip() + 
+  labs( title = 'Sarcoma in France',
+        subtitle = 'Total number of sarcomas from 2013 to 2016',
+        caption = 'Data from Pinieux et al. PLOS ONE 2021', 
+        x = 'Histotype', 
+        y = 'Number of cases', 
+        fill = 'Site') +  theme(legend.position = "bottom")
+
+
+  
