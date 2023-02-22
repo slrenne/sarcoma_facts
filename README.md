@@ -8,8 +8,8 @@ Here some graphication of the paper from [de Pinieux 2021](https://pubmed.ncbi.n
 
 This first graph shows the total number of cases by differentiation (i.e. the chapters of the WHO classifications)
 
-![](https://raw.githubusercontent.com/slrenne/sarcoma_facts/1d77108fecb9b3ba0e9c1c631bb8af99f99a88e2/output/pinieuxTotDiff.png)
+![](https://raw.githubusercontent.com/slrenne/sarcoma_facts/main/output/pinieuxTotDiff.png)
 
 Whereas this second graph shows the total number of cases by histology. 
 
-![](https://raw.githubusercontent.com/slrenne/sarcoma_facts/1d77108fecb9b3ba0e9c1c631bb8af99f99a88e2/output/pinieuxTotHisto.png)
+![](https://raw.githubusercontent.com/slrenne/sarcoma_facts/main/output/pinieuxTotHisto.png)
