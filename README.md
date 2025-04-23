@@ -16,6 +16,10 @@ Whereas this second graph shows the total number of cases by histology.
 
 ![](https://raw.githubusercontent.com/slrenne/sarcoma_facts/main/output/pinieuxTotHisto.png)
 
+And this is the same graph using a wordcloud instead. 
+
+![](https://raw.githubusercontent.com/slrenne/sarcoma_facts/main/output/wordcloud.png)
+
 ### Mutational staus
 Although results from [TCGA](https://pubmed.ncbi.nlm.nih.gov/29100075/) suggested that sarcoma tended to have few mutations and more copy number variation, more recent genomic data seems to suggest that the number of mutation depends the sarcoma histotype. 
 
